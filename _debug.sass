@@ -1,0 +1,25 @@
+$screen-xs: 480px
+$screen-sm: 768px
+$screen-md: 992px
+$screen-lg: 1200px
+
+@mixin debug-media-queries
+  @media(min-width: #{$screen-md})
+    body
+      background: purple
+
+  @media(max-width: #{$screen-md})
+    body
+      background: green
+
+  @media(max-width: #{$screen-sm})
+    body
+      background: blue
+
+  @media(max-width: #{$screen-xs})
+    body
+      background: red
+
+// Call the mixin from your layout sass
+// Comment it out to leave for others
++debug-media-queries
