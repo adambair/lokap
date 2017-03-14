@@ -1,0 +1,35 @@
+digraph G {
+  label = "Stripe Integration\n\n";
+  fontname = helvetica;
+  labelloc = t;
+
+  node [ fontname = "hackon-inconsolata-dz-complete" ];
+  edge [ fontname = "helvetica", fontsize = 10 ];
+
+  subgraph models {
+    color = white;
+
+    VO [ label = "VehicleOwner" ];
+    CO [ label = "ServiceStation::Company" ];
+  }
+
+  subgraph stripe {
+    color = white;
+
+    SC  [ label     = "{<f0> StripeCustomer|<f1> entity_type|<f2> entity_id\n\n}",
+          style     = filled,
+          fillcolor = lightblue,
+          shape     = Mrecord ];
+
+    SEL [ label     = "{<f0> StripeEventLog | <f1> stripe_customer_id | <f2> event | <f3> data \n\n }",
+          style     = filled,
+          fillcolor = lightblue,
+          shape     = Mrecord ];
+  }
+
+  VO  -> SC [ label = "poly" ];
+  CO  -> SC [ label = "poly" ];
+  SEL -> SC [ dir = back ];
+
+  { rank = same; SEL, SC }
+}

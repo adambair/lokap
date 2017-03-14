@@ -1,0 +1,18 @@
+th
+  a
+    &:before
+      font-family: FontAwesome
+      padding-right: 5px
+      display: inline-block
+      vertical-align: middle
+      content: "\f0dc" // fa-sort
+      color: $light-gray
+      
+  .current 
+    &:before
+      color: $dark-gray
+    &.asc:before
+      content: "\f0de" // fa-sort-asc
+    &.desc:before
+      content: "\f0dd" // fa-sort-desc
+
