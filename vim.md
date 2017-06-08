@@ -24,3 +24,4 @@ http://cl.ly/3j3E0d0O3B1k/Image%202016-02-16%20at%209.47.27%20PM.png
             --enable-largefile \
             --with-lua-prefix=/usr/local
 
+gqq - wrap current line
