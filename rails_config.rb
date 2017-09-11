@@ -18,6 +18,9 @@ module MyApp
     config.payment = config_for(:payment)
   end
 end
+
+Rails.application.config.payment
+
 UnfriendlyId::Openbay.encode
 UnfriendlyId::Openbay.encode
 
