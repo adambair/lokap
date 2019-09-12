@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Application	rails_config.rb	/^  class Application < Rails::Application$/;"	c	class:MyApp
+Array	scraps.rb	/^class Array$/;"	c
+MyApp	rails_config.rb	/^module MyApp$/;"	m
+MyStringIO	scraps.rb	/^class MyStringIO < StringIO$/;"	c
+ProductsController	rails_sortable/controller.rb	/^class ProductsController < ApplicationController$/;"	c
+Youtube	scraps.rb	/^module Youtube$/;"	m
+break_long_text	scraps.rb	/^def break_long_text(string, length=90)$/;"	f
+chunk	scraps.rb	/^  def chunk(pieces=2)$/;"	f	class:Array
+convert_newlines_to_html	scraps.rb	/^def convert_newlines_to_html(string)$/;"	f
+find_resource_hash	scraps.rb	/^def find_resource_hash(path)$/;"	f
+imageio_for_data	scraps.rb	/^def self.imageio_for_data(data, fname)  $/;"	F
+index	rails_sortable/controller.rb	/^  def index$/;"	f	class:ProductsController
+orientation	scraps.rb	/^def orientation(width, height)$/;"	f
+ostruct_fixture	openstruct.rb	/^def ostruct_fixture(fixture_path)$/;"	f
+rebuild_events	rebuild_event.rb	/^def rebuild_events(set)$/;"	f
+rescue_action_in_public	scraps.rb	/^def rescue_action_in_public(exception)$/;"	f
+silently	scraps.rb	/^def silently(&block)$/;"	f
+sort_column	rails_sortable/controller.rb	/^  def sort_column$/;"	f	class:ProductsController
+sort_direction	rails_sortable/controller.rb	/^  def sort_direction$/;"	f	class:ProductsController
+sortable	rails_sortable/helper.rb	/^def sortable(column, title = nil)$/;"	f
+timeline	scraps.rb	/^def timeline(label, first_date = nil, second_date = nil)$/;"	f
+truncate_text	scraps.rb	/^def truncate_text(text, length = 30, end_string = '')$/;"	f
+truncate_text_reverse	scraps.rb	/^def truncate_text_reverse(text, length = 30, start_string = '')$/;"	f
+youtube_id	scraps.rb	/^  def youtube_id(url)$/;"	f	class:Youtube
+youtube_player_markup	scraps.rb	/^  def youtube_player_markup(url, width=425, height=350)$/;"	f	class:Youtube
+youtube_thumb_exists?	scraps.rb	/^  def youtube_thumb_exists?(url, filename='1.jpg')$/;"	f	class:Youtube
