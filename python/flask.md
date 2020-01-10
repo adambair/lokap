@@ -20,3 +20,19 @@ request.full_path:           /alert/dingding/test?x=y
 
 request.args:                ImmutableMultiDict([('x', 'y')])
 request.args.get('x'):       y
+
+
+#  server static assets from flask-classful
+#
+#  /things/templates/derp.html
+#  <link rel="stylesheet" href="{{ url_for('ThingsView:static', filename='css/things.css') }}">
+# 
+#  import os
+#  from flask_classful import FlaskView, route
+#  from flask import send_from_directory
+# 
+#  class SomethingView(FlaskView):
+#      @route('/static/<path:filename>')
+#      def static(self, filename):
+#          path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'static')
+#          return send_from_directory(path, filename)
